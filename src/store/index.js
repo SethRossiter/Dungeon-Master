@@ -115,7 +115,7 @@ export default new Vuex.Store({
     removeLists({ commit, dispatch }, list) {
       api.delete('lists/' + list._id)
         .then(res => {
-          dispatch('getLists')
+          dispatch('removeLists')
         })
         .catch(handleError)
     },
@@ -127,7 +127,7 @@ export default new Vuex.Store({
         .catch(handleError)
     },
     moveTasks({ commit, dispatch }, task) {
-      api.put('tasks/', task)
+      api.put('tasks/'+ task._id, task)
         .then(res => {
           dispatch('getTasks', {boardId: task.boardId, _id:task.listId})
         })
@@ -150,7 +150,7 @@ export default new Vuex.Store({
     removeTasks({ commit, dispatch }, task) {
       api.delete('tasks/' + task._id)
         .then(res => {
-          dispatch('getTasks', {boardId: task.boardId, _id:task.listId})
+          dispatch('removeTasks', {boardId: task.boardId, _id:task.listId})
         })
         .catch(handleError)
     },
@@ -164,7 +164,7 @@ export default new Vuex.Store({
     removeComments({ commit, dispatch }, comments) {
       api.delete('comments/' + comments._id)
         .then(res => {
-        dispatch('getComments', {boardId: comments.boardId, listId:comments.listId, _id: comments.taskId})
+        dispatch('removeComments', {boardId: comments.boardId, listId:comments.listId, _id: comments.taskId})
         })
         .catch(handleError)
     },

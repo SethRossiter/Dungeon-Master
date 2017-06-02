@@ -39,12 +39,12 @@
     },
     methods: {
       getDets() {
-        console.log(this.tasks.description)
+        console.log(this.task.description)
       },
       createTasks(event) {
         var task = JSON.parse(event.dataTransfer.getData('text/javascript'))
         task.listId = this.listData._id
-        this.$store.dispatch('moveTask', task)
+        this.$store.dispatch('moveTasks', task)
       },
       createNewTask() {
         this.$store.dispatch('createNewTask',{
@@ -66,7 +66,7 @@
         this.$store.dispatch('moveTasks', tasks)
       },
     removeTasks(){
-      this.$store.dispatch('removeTasks', listData._id, boardId.tasks)
+      this.$store.dispatch('removeTasks', listData._id, boardId.task)
       }
     },
     components: {
