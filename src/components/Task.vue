@@ -1,11 +1,10 @@
 <template>
 <div class="well well-sm">
     <div class="task">  
-    {{taskData.name}}
+    {{taskData.name}}<button class="delete" @click="removeTasks(taskData)">x</button>
     <form @submit.prevent="createComments()">
       <input type="text" v-model="name" required placeholder="Create Comment">
       <button type="submit">+</button>
-        <span @submit.prevent="removeComments()">x</span>
     </form>
     <ul>
      <li v-for="comment in comments">
@@ -46,9 +45,9 @@ export default {
     })
     this.name = ''
   },
-  removeComments(comments){
-    this.$store.dispatch('removeComments', comments)
-  }
+      removeTasks(tasks){
+      this.$store.dispatch('removeTasks', tasks)
+      }
   },
   components:{
     Comment
@@ -61,5 +60,8 @@ export default {
 <style scoped>
 .well{
   background-color: purple;
+}
+span{
+  color: red;
 }
 </style>

@@ -5,7 +5,6 @@
       <form @submit.prevent="createLists(list)">
         <input type="text" v-model="name" required placeholder="Create List">
         <button type="submit">+</button>
-      <span @submit.prevent="removeLists(list)">x</span>
       </form>
   <div class="well"> 
      <li v-for="list in lists">
@@ -45,10 +44,7 @@ export default {
           boardId: this.$route.params.id
         })
         this.name = ''
-      },
-    removeLists(list){
-      this.$store.dispatch('removeLists', list)
-  }
+      }
   },
   components: {
     List

@@ -1,7 +1,7 @@
 <template>
 <div class="well well-sm">
     <div class="comment" >  
-    {{commentData.name}}
+    {{commentData.name}} <button class="delete" @click="removeComments(commentData)">x</button>
     </div>
   </div>
 </template>
@@ -17,6 +17,11 @@ export default {
   },
   mounted(){
   },
+  methods:{
+  removeComments(comments){
+    this.$store.dispatch('removeComments', comments)
+  }
+  }
  
   }
   
@@ -26,5 +31,8 @@ export default {
 <style scoped>
 .well{
   background-color: green;
+}
+span{
+  color: red;
 }
 </style>

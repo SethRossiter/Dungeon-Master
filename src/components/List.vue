@@ -1,11 +1,11 @@
 <template>
 <div class="well well-sm">
   <div class="list" droppable="true" v-on:drop.capture="createTasks" ondragover="event.preventDefault()">
-    Active List: {{listData.name}}  ---- {{listData.description}} ---- {{listData._id}}
+    Active List: {{listData.name}}  ---- {{listData.description}} ---- {{listData._id}}<button class="delete" @click="removeLists(listData)">x</button>
+
     <form @submit.prevent="createNewTask()">
       <input type="text" v-model="name" required placeholder="Create Tasks">
       <button type="submit">+</button>
-      <span @submit.prevent="removeTasks()">x</span>
     </form>
     <div v-for="(task, i) in tasks" :key="i" :id="i" class="tasks" draggable="true" v-on:dragstart.capture="moving">
       <task :taskData="task"></task>
@@ -65,9 +65,9 @@
         this.tasks.splice(i, 1)
         this.$store.dispatch('moveTasks', tasks)
       },
-    removeTasks(){
-      this.$store.dispatch('removeTasks', listData._id, boardId.task)
-      }
+    removeLists(list){
+      this.$store.dispatch('removeLists', list)
+  }
     },
     components: {
       Task,
@@ -80,5 +80,8 @@
 <style scoped>
 .well{
   background-color: orange;
+}
+span{
+  color: red;
 }
 </style>
