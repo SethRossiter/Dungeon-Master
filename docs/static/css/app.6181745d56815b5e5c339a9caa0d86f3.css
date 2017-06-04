@@ -1,0 +1,136 @@
+
+body{
+  padding-top: 40px;
+  background-color: #00FFAE;
+}
+p,h1,h2,h3,h4,h5,h6,span,ul,li,div,a,a:hover{
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ul li a[data-v-0c6e3af6] {
+    color: black;
+}
+ul li[data-v-0c6e3af6] {
+    color: black;
+    list-style: none;
+}
+button[data-v-0c6e3af6] {
+    color: black;
+    margin-bottom: 10px;
+}
+.well[data-v-0c6e3af6]{
+    color: black;
+    text-align: left;
+    font-family: 'Asap', sans-serif;
+    font-weight: bolder;
+}
+.well .well[data-v-0c6e3af6]{
+    background-color: #fbfbfb;
+}
+
+.well[data-v-5337eb44] {
+  color: black;
+  background-color: #fbfbfb;
+  font-family: 'Asap', sans-serif;
+}
+h6[data-v-5337eb44] {
+  color: black;
+}
+
+button[data-v-3aa38f94]{
+  color: black;
+}
+.well[data-v-3aa38f94] {
+  background-color: #e1e1e1;
+}
+h5[data-v-3aa38f94] {
+  color: black;
+}
+
+.well[data-v-7a06f19d]{
+  background-color: #c8c8c8;
+}
+button[data-v-7a06f19d]{
+  color: black;
+}
+
+.well[data-v-e694f512]{
+    background-color: #ccffee;
+}
+h5[data-v-e694f512]{
+  color: black;
+}
+button[data-v-e694f512]{
+  color: black;
+}
+
+h1 {
+        color: black;
+        text-align: center;
+        font-family: 'Asap', sans-serif;
+        font-weight: bold;
+        text-shadow: 1px 1px 1px black;
+}
+input {
+        color: black;
+        font-family: 'Open Sans', sans-serif;
+        margin-bottom: 10px;
+        font-size: 5px;
+}
+button{
+    margin-top: 10px;
+    font-weight: bold;
+}
+span {
+        color: black;
+        text-align: left;
+}
+.well.custom-well-small {
+        width: 335px;
+        margin: 0 auto;
+        text-align: center;
+        background-color: #fbfbfb;
+}
+
+h1[data-v-fd9f004a]{
+    color: black;
+    text-align: center;
+    font-family: 'Asap', sans-serif;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+button[data-v-fd9f004a]{
+    margin-top: 10px;
+    font-weight: bold;
+}
+span[data-v-fd9f004a]{
+    color: black;
+    text-align: left;
+}
+.well.custom-well-small[data-v-fd9f004a] { 
+    width: 335px; 
+    margin: 0 auto; 
+    text-align: center;
+    background-color: #fbfbfb;
+}
+
+/*# sourceMappingURL=app.6181745d56815b5e5c339a9caa0d86f3.css.map*/

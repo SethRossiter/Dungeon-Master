@@ -60,7 +60,7 @@ export default {
 
 <style scoped>
 .well{
-  background-color: purple;
+  background-color: #c8c8c8;
 }
 button{
   color: black;

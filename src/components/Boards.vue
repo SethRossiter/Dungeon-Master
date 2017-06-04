@@ -60,4 +60,7 @@
     font-family: 'Asap', sans-serif;
     font-weight: bolder;
 }
+.well .well{
+    background-color: #fbfbfb;
+}
 </style>

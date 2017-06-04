@@ -1,8 +1,8 @@
 <template>
-<div class="well well-sm">
+<div class="well">
   <div class="list" droppable="true" v-on:drop.capture="createTasks" ondragover="event.preventDefault()">
-    Active List: {{listData.name}}  ---- {{listData.description}} ---- {{listData._id}}
-      <button class="fa fa-trash" aria-hidden="true" @click="removeLists(listData)"></button>
+    <h5>Active List: {{listData.name}}  ---- {{listData.description}} ---- {{listData._id}}
+      <button class="fa fa-trash" aria-hidden="true" @click="removeLists(listData)"></button></h5>
     <form @submit.prevent="createNewTask()">
       <input type="text" v-model="name" required placeholder="Create Tasks">
       <button type="submit">+</button>
@@ -78,10 +78,15 @@
 
 
 <style scoped>
-.well{
-  background-color: orange;
-}
 button{
+  color: black;
+}
+
+.well {
+  background-color: #e1e1e1;
+}
+
+h5 {
   color: black;
 }
 </style>
