@@ -1,7 +1,8 @@
 <template>
 <div class="well well-sm">
     <div class="comment" >  
-    {{commentData.name}} <button class="delete" @click="removeComments(commentData)">x</button>
+    {{commentData.name}} 
+    <button class="fa fa-trash" aria-hidden="true" @click="removeComments(commentData)"></button>
     </div>
   </div>
 </template>
@@ -32,7 +33,7 @@ export default {
 .well{
   background-color: green;
 }
-span{
-  color: red;
+button{
+  color: black;
 }
 </style>

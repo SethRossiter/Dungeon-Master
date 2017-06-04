@@ -1,7 +1,8 @@
 <template>
 <div class="well well-sm">
     <div class="task">  
-    {{taskData.name}}<button class="delete" @click="removeTasks(taskData)">x</button>
+    {{taskData.name}}
+      <button class="fa fa-trash" aria-hidden="true" @click="removeTasks(taskData)"></button>
     <form @submit.prevent="createComments()">
       <input type="text" v-model="name" required placeholder="Create Comment">
       <button type="submit">+</button>
@@ -61,7 +62,7 @@ export default {
 .well{
   background-color: purple;
 }
-span{
-  color: red;
+button{
+  color: black;
 }
 </style>
