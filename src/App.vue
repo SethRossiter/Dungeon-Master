@@ -22,9 +22,8 @@ export default {
 
 <style>
 body{
-  background-color: #0079bf;
-  color: #fff;
   padding-top: 40px;
+  background-color: #00FFAE;
 }
 p,h1,h2,h3,h4,h5,h6,span,ul,li,div,a,a:hover{
   color: #fff;
