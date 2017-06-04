@@ -18,7 +18,7 @@
                     </div>
                     <div class="form group row">
                         <div class="col-10">
-                            <button class="btn btn-default" type="submit">submit!</button>
+                            <button class="btn btn-default" type="submit">submit</button>
                         </div>
                     </div>
                 </form>
